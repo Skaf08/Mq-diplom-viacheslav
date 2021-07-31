@@ -1,3 +1,6 @@
+/*Я исравил все ошибки, кроме №8 и №20. Подскажите, пожалуйста, как сделать, чтобы .trend-fon растягивался в зависимости от контента.
+А так же, так и не смог найти и доагадаться, как поместить .shop-border на .shop-image*/
+
 @font-face {
   font-family: 'OpenSans';
   src: url("../fonts/OpenSans-Regular.woff");
@@ -24,6 +27,7 @@
   position: relative;
   z-index: 1;
   background-size: 100%;
+  padding-bottom: 150px;
 }
 
 .header:after {
@@ -56,7 +60,7 @@ a {
 
 .menu-item {
   color: #ffff;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-weight: 400; 
   text-transform: uppercase;
   text-decoration: none;
@@ -69,25 +73,24 @@ a {
 .header-title {
   color: #ffff;
   text-align: center;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   width: 78%;
   max-width: 680px;
   margin-left:auto;
   margin-right:auto;
-  padding-bottom: 150px;
   margin-top: 125px;
   position: relative;
   z-index: 1;
   font-weight: bold;
   font-size: 45px;
-  line-height: 75px;
+  line-height: 1.67;
 }
 
 .trends-header {
   margin-top: 65px;
   font-size: 20px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
@@ -120,6 +123,7 @@ a {
 .trend-fon {
   position: relative;
   width: 24.5%;
+  height: 100%;
 }
 
 .trend-fon:after {
@@ -149,21 +153,20 @@ a {
 }
 
 .trend-list {
-  position: absolute;
   list-style-type: none;
 }
 
 .trend-item {
   display: inline;
   color: #b59f5b;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-.trend-item:nth-child(n+1) {
-  margin-right: 20px;
+.trend-item:nth-child(n+2) {
+  margin-left: 20px;
 }
 
 .trend-text {
@@ -171,8 +174,8 @@ a {
   display: block;
   font-size: 20px;
   color:#ffffff;
-  line-height: 24px; 
-  font-family:OpenSans;
+  line-height: 1.2; 
+  font-family:'OpenSans', Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -185,13 +188,16 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 65px;
+  justify-content: space-between
+}
+
+.main {
+  max-width: 778px;
 }
 
 .block {
-  max-width: 778px;
   display: flex;
-  margin-bottom: 60px;
-  margin-right: 15%;
+  margin-bottom: 60px;  
 }
 
 .news {
@@ -210,14 +216,14 @@ a {
 .item {
   display: inline;
   color: #b59f5b;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-.item:nth-child(n+1) {
-  margin-right: 20px;
+.item:nth-child(n+2) {
+  margin-left: 20px;
 }
 
 .link-teg {
@@ -226,7 +232,7 @@ a {
 
 .description-header {
   text-transform: uppercase; 
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   margin-top: 15px;
   margin-bottom: 30px;
   font-size: 20px;
@@ -237,31 +243,31 @@ a {
 }
 
 .date {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   color: #888888;
   font-size: 12px;
   margin-right: 15px;
 }
 
 .author { 
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
 }
 
 .text {
   display: block;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 15px;
-  line-height: 22px;  
+  line-height: 1.47;  
   margin-top: 55px;
 }
 
 .text-add {
   display: block;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 15px;
-  line-height: 22px;  
+  line-height: 1.47;  
   margin-top: 25px;
 }
 
@@ -271,7 +277,7 @@ a {
 
 .recomendation-header {
   font-size: 14px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
@@ -306,16 +312,16 @@ a {
 }
 
 .date-aside {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   color: #888888;
   font-size: 12px;
 }
 
 .aside-desc-header {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 18px;
+  line-height: 1.29;
   font-weight: bold;
 }
 
@@ -328,6 +334,7 @@ a {
   margin-bottom: 60px;
   display: flex;
   font-size: 0;
+  justify-content: space-between;
 }
 
 .hidden-desc-search {
@@ -339,10 +346,11 @@ a {
 
 .search-text {
   padding: 20px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 13px;
   border: none;
   background-color: #f4f7f6;
+  width: 109.5%;
 }
 
 .search-button {
@@ -365,7 +373,7 @@ a {
 
 .email-header {
   font-size: 14px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
@@ -385,7 +393,7 @@ a {
   margin-bottom: 30px;
 }
 
-.email {
+.about-email {
   margin-bottom: 60px;
 }
 
@@ -401,7 +409,7 @@ a {
   background-color: #f4f7f6;
   width: 100%;
   padding: 20px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 13px;
 }
 
@@ -414,20 +422,19 @@ a {
   background-color: #b59f5b;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: auto;
-  padding-right: auto;
   color: #ffffff;
   margin-top: 20px;
 }
 
 .tegs-header {
   font-size: 14px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-weight: bold;
+  margin-top: 60px;
 }
 
 .tegs-header:after { 
@@ -453,7 +460,7 @@ a {
 .teg {
   display: inline-block;
   margin-bottom: 6px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
@@ -472,7 +479,7 @@ a {
 
 .themes-header {
   font-size: 14px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
@@ -497,7 +504,7 @@ a {
 }
 
 .theme {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 22px;
@@ -523,7 +530,7 @@ a {
 
 .shop-header {
   font-size: 14px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
@@ -546,36 +553,42 @@ a {
 .shop {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  align-items: flex-end;
 }
 
 .shop-item {
-  margin-bottom: 260px;
-  position: relative;
-  margin-right: 25px;
+  margin-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;  
+}
+
+.shop-image {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .shop-border {
   border: 3px solid #d3c59d;
-  padding-bottom: 180px;
+  padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 55px;
-  position: absolute;
   z-index: 100;
-  height: 255px;
-  top: 170px;
-  width: 130%;
+  max-width: 345px;
 }
 
 .shop-item-header {
   text-transform: uppercase; 
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   margin-bottom: 15px;
   font-size: 20px;
 }
@@ -590,8 +603,8 @@ a {
 
 .shop-text {
   font-size: 15px;
-  line-height: 22px;
-  font-family: OpenSans;
+  line-height: 1.47;
+  font-family: 'OpenSans', Arial, sans-serif;
 }
 
 .shop-footer {
@@ -605,7 +618,7 @@ a {
   position: relative;
   font-size: 14px;
   font-weight: bold;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
 }
 
 .shop-price::after {
@@ -621,7 +634,7 @@ a {
 .last-shop-price {
   font-size: 20px;
   font-weight: bold;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
 }
 
 .link-s-button {
@@ -641,7 +654,7 @@ a {
 
 .shop-button {
   font-size: 14px;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -652,10 +665,10 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 40px;
 }
 
 .about-icons {
-  height: 80px;
   background: #f4f7f6;
 }
 
@@ -665,66 +678,44 @@ a {
   padding-top: 30px;
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 } 
 
-.link-twitter {
-  margin-right: 30px;
+.icon {
   width: 20px;
   height: 20px;
+  margin-right: 30px;
   display: block;
+}
+
+.link-twitter {
   background-image: url("../svg/004-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
 }
 
 .link-pinterest {
-  margin-right: 30px;
-  width: 20px;
-  height: 20px;
-  display: block;
   background: url("../svg/001-pinterest.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
 }
 
 .link-facebook {
-  margin-right: 30px;
-  width: 20px;
-  height: 20px;
   background: url("../svg/002-facebook-logo.svg");
-  background-repeat: no-repeat;
   background-size: 20px 20px;
-  display: inline-block;
 }
 
 .link-instagram {
-  margin-right: 30px;
-  width: 20px;
-  height: 20px;
   background: url("../svg/005-instagram.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-size: 20px 20px;
 }
 
 .link-tumblr {
-  width: 20px;
-  height: 20px;
   background: url("../svg/003-tumblr.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-size: 20px 20px;
 }
 
 .link-copyright {
   display: block;
   margin-top: 74px;
   max-width: 1170px;
-  margin-bottom: 40px;
   color: #999999;
   font-size: 12px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-weight: bold;
   text-align: center;
 }
@@ -741,7 +732,7 @@ a {
 
 .popup-header {
   font-size: 16px;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
@@ -762,7 +753,7 @@ a {
 .question {
   display: block;
   font-size: 13px;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
   margin-bottom: 13px;
   margin-top: 35px;
   max-width: 330px;
@@ -776,7 +767,7 @@ a {
   padding-left: 20px;
   margin: 0;
   border: 0px solid #cbd1d4;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 13px;
   background: #f4f7f6;
   color: #bdc0bf;
@@ -825,7 +816,7 @@ a {
   padding-left: 20px;
   margin: 0;
   border: 0px solid #cbd1d4;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 13px;
   background: #f4f7f6;
   color: #a2a4a3;
@@ -836,7 +827,7 @@ a {
   padding: 15px 55px;
   color: #ffffff;
   background-color: #b59f5b;
-  font-family: OpenSans;
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 16px;
   width: 100%;
   margin-top: 30px;
@@ -863,6 +854,38 @@ a {
   .menu{
     margin-left:auto;
   }
+
+  .menu:hover {
+    text-decoration: underline;
+  }
+
+  .trend-item:hover {
+    text-decoration: underline;
+  }
+
+  .trend-text:hover {
+    color: #b59f5b;
+  }
+
+  .item:hover {
+    text-decoration: underline;
+  }
+
+  .description-header:hover .link-desc {
+    color:#b59f5b;
+  }
+
+  .teg:hover {
+    font-weight: 900;
+  }
+
+  .theme:hover .link-themes {
+    color: #c5b585;
+  }
+
+  .link-shop-text:hover{
+    text-decoration: underline;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -870,10 +893,10 @@ a {
     background: url("../images/banner-bg-tablet.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    padding-top: 50px;
   }
 
   .title {
-      padding-top: 50px;
       margin-right: 35px;
       margin-left: 35px;
   }
@@ -922,7 +945,7 @@ a {
 
   .header-title {
     font-size: 40px;
-    line-height: 55px;
+    line-height: 1.375;
     padding-bottom: 125px;
     margin-top: 105px;
   }
@@ -944,6 +967,11 @@ a {
 
   .content {
     padding-top: 50px;
+
+  }
+
+  .main {
+    margin-right: 35px;
   }
 
   .block {
@@ -1031,7 +1059,7 @@ a {
 
   .header-title {
     font-size: 26px;
-    line-height: 36px;
+    line-height: 1.38;
     margin-top: 45px;
     padding-bottom: 215px;
   }
@@ -1056,6 +1084,7 @@ a {
   .content {
     padding-top: 45px;
     flex-wrap: wrap;
+    width: 100vw;
   }
 
   .block {
@@ -1077,15 +1106,13 @@ a {
 
   .text {
     font-size: 14px;
-    line-height: 20px;  
     margin-top: 25px;
   }
 
   .text-add {
     display: block;
-    font-family: 'OpenSans';
+    font-family: 'OpenSans', Arial, sans-serif;
     font-size: 14px;
-    line-height: 20px;  
     margin-top: 15px;
   }
 
@@ -1098,7 +1125,7 @@ a {
   } 
 
   .search-text {
-    width: calc(100vw - 30px - 67px);
+    width: calc(100vw - 83px);
   }
 
   .popup {
