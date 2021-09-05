@@ -510,6 +510,10 @@ a {
     position: relative;
     bottom: 5px;
 }
+
+.search-button:hover {
+    background-color: #323232;
+}
   
 .email-header {
     font-size: 14px;
@@ -566,6 +570,10 @@ a {
     margin-top: 20px;
 }
 
+.email-button:hover {
+    background-color: #323232;
+}
+
 .tegs-header {
     font-size: 14px;
     font-family: 'OpenSans', Arial, sans-serif;
@@ -619,6 +627,10 @@ a {
     color: #000000;
     border: 3px solid #eeeeee;
     padding: 6px 13px 6px 13px;
+}
+
+.link-tegs:hover {
+    border: 3px solid #b59f5b;
 }
 
 .themes-header {
@@ -784,6 +796,11 @@ a {
     font-weight: bold;
     color: #ffffff;
     background-color: #b59f5b;
+    border: none;
+}
+
+.shop-button:hover {
+    background-color: #323232;
 }
 
 .footer {
